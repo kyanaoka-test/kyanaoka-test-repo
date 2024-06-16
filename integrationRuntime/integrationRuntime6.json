@@ -1,0 +1,48 @@
+{
+	"name": "integrationRuntime6",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Japan East",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded",
+				"expressCustomSetupProperties": [
+					{
+						"type": "CmdkeySetup",
+						"typeProperties": {
+							"targetName": "asdf",
+							"userName": "asdf",
+							"password": {
+								"type": "SecureString",
+								"value": "**********"
+							}
+						}
+					},
+					{
+						"type": "EnvironmentVariableSetup",
+						"typeProperties": {
+							"variableName": "ggg",
+							"variableValue": "ddddd"
+						}
+					},
+					{
+						"type": "ComponentSetup",
+						"typeProperties": {
+							"componentName": "SentryOne.TaskFactory",
+							"licenseKey": {
+								"type": "SecureString",
+								"value": "**********"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "recovery",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

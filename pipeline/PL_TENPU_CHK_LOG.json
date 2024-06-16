@@ -1,0 +1,37 @@
+{
+	"name": "PL_TENPU_CHK_LOG",
+	"properties": {
+		"activities": [
+			{
+				"name": "Data flow1",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF_TENPU_CHK_lOG",
+						"type": "DataFlowReference"
+					},
+					"integrationRuntime": {
+						"referenceName": "integrationRuntime3",
+						"type": "IntegrationRuntimeReference"
+					},
+					"traceLevel": "Fine",
+					"continuationSettings": {
+						"customizedCheckpointKey": "419ca5ed-cb02-4cc7-b6e7-ca07ee45f719"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-05-31T04:58:23Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
