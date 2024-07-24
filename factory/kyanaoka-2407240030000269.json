@@ -1,0 +1,9 @@
+{
+	"name": "kyanaoka-2407240030000269",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "25770ce8-a556-4c32-950b-6c51a5f8b114",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
